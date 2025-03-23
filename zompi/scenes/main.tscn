@@ -79,6 +79,108 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -60.5888, -3.67222, -67.77
 [node name="Zombie8" parent="." instance=ExtResource("3_1q23w")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, -49.6942)
 
+[node name="Zombie10" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, -40.9716)
+
+[node name="Zombie11" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, -3.07287)
+
+[node name="Zombie12" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, 14.7602)
+
+[node name="Zombie13" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, -22.2535)
+
+[node name="Zombie14" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, 28.745)
+
+[node name="Zombie15" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, 38.7963)
+
+[node name="Zombie16" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, 47.5434)
+
+[node name="Zombie17" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, 53.6753)
+
+[node name="Zombie18" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, 62.4687)
+
+[node name="Zombie19" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 41.3692, 0.291146, 62.4687)
+
+[node name="Zombie20" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 41.3692, 0.291146, 50.9694)
+
+[node name="Zombie21" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 41.3692, 0.291146, 37.7411)
+
+[node name="Zombie22" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 41.3692, 0.291146, 26.0136)
+
+[node name="Zombie23" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 41.3692, 0.291146, 14.3997)
+
+[node name="Zombie24" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 51.646, 0.291146, 14.3997)
+
+[node name="Zombie25" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 40.5303, 0.334169, -5.64478)
+
+[node name="Zombie26" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 40.5303, 0.334169, -22.0924)
+
+[node name="Zombie27" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 23.5303, 0.334169, -22.0924)
+
+[node name="Zombie28" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 23.5303, 0.334169, -4.0924)
+
+[node name="Zombie29" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 23.5303, 0.334169, 15.9076)
+
+[node name="Zombie30" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 23.5303, 0.334169, 40.9076)
+
+[node name="Zombie31" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -2.46973, 0.334169, 40.9076)
+
+[node name="Zombie32" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -2.46973, 0.334169, 25.9076)
+
+[node name="Zombie33" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -27.4697, 0.334169, 25.9076)
+
+[node name="Zombie34" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -27.4697, 0.334169, 46.9076)
+
+[node name="Zombie35" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -27.4697, 0.334169, 59.7598)
+
+[node name="Zombie36" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -3.97123, 0.334169, 59.7598)
+
+[node name="Zombie37" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 2.6901, 0.334169, 59.7598)
+
+[node name="Zombie38" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -57.7842, 0.334169, 59.7598)
+
+[node name="Zombie39" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -57.7842, 0.334169, 36.1621)
+
+[node name="Zombie40" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -41.5535, 0.334169, 36.1621)
+
+[node name="Zombie41" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -41.5535, 0.334169, 26.3899)
+
+[node name="Zombie42" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -41.5535, 0.334169, -49.5789)
+
+[node name="Zombie43" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -62.9751, 0.334169, -49.5789)
+
 [node name="Zombie9" parent="." instance=ExtResource("3_1q23w")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -55.6682, 0.592887, -21.5022)
 
@@ -173,4 +275,134 @@ material_override = SubResource("StandardMaterial3D_blinu")
 mesh = SubResource("BoxMesh_yrcp1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box8"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box9" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -49.1565, 1.23335, 20.8789)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box9"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box9"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box10" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.1929, 1.23335, 20.8789)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box10"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box10"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box11" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.43925, 1.23335, 20.8789)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box11"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box11"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box12" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.43925, 1.23335, 39.4394)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box12"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box12"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box13" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 33.1542, 1.23335, 39.4394)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box13"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box13"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box14" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 33.1542, 1.23335, 18.0842)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box14"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box14"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box15" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 33.1542, 1.23335, -24.0028)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box15"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box15"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box16" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 33.1542, 1.23335, -46.6414)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box16"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box16"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box17" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 14.0622, 1.23335, -46.6414)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box17"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box17"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box18" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.3136, 1.23335, -46.6414)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box18"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box18"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box19" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.3136, 1.23335, -25.6609)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box19"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box19"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box20" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.3136, 1.23335, 35.746)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box20"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box20"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box21" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -10.3136, 1.23335, 51.368)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box21"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box21"]
 shape = SubResource("BoxShape3D_7pyf5")
