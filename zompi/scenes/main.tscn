@@ -1,7 +1,19 @@
-[gd_scene load_steps=9 format=3 uid="uid://ch2sel5qwek1g"]
+[gd_scene load_steps=12 format=3 uid="uid://ch2sel5qwek1g"]
 
 [ext_resource type="Texture2D" uid="uid://bjbx03lfewhlf" path="res://assets/Sprites/floor_texture.png" id="1_qmmm1"]
 [ext_resource type="PackedScene" uid="uid://bytdrbdswylym" path="res://assets/Player/player.tscn" id="2_8fcee"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4k3hd"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_ucejh"]
+sky_material = SubResource("ProceduralSkyMaterial_4k3hd")
+
+[sub_resource type="Environment" id="Environment_cuwiu"]
+background_mode = 2
+sky = SubResource("Sky_ucejh")
+tonemap_mode = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mi1e5"]
 albedo_color = Color(0.0431373, 0.305882, 0, 1)
@@ -24,6 +36,13 @@ uv1_scale = Vector3(3, 2, 2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pyf5"]
 
 [node name="main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_cuwiu")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
 
 [node name="floor" type="StaticBody3D" parent="."]
 
@@ -65,4 +84,4 @@ mesh = SubResource("BoxMesh_yrcp1")
 shape = SubResource("BoxShape3D_7pyf5")
 
 [node name="Player" parent="." instance=ExtResource("2_8fcee")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09697, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.44887, 0)
