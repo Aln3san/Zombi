@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://ch2sel5qwek1g"]
+[gd_scene load_steps=13 format=3 uid="uid://ch2sel5qwek1g"]
 
 [ext_resource type="Texture2D" uid="uid://bjbx03lfewhlf" path="res://assets/Sprites/floor_texture.png" id="1_qmmm1"]
 [ext_resource type="PackedScene" uid="uid://bytdrbdswylym" path="res://assets/Player/player.tscn" id="2_8fcee"]
+[ext_resource type="PackedScene" uid="uid://b0mnufa5pt8ds" path="res://assets/Zombie/zombie.tscn" id="3_1q23w"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4k3hd"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -85,3 +86,12 @@ shape = SubResource("BoxShape3D_7pyf5")
 
 [node name="Player" parent="." instance=ExtResource("2_8fcee")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.44887, 0)
+
+[node name="Zombie" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -9.41934, 2.92087, -19.2671)
+
+[node name="Zombie2" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 9.20918, 8.10901, -19.9998)
+
+[node name="Zombie3" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 2.82238, 5.0329, -21.76)
