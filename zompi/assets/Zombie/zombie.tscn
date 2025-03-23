@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://b0mnufa5pt8ds"]
+[gd_scene load_steps=23 format=4 uid="uid://b0mnufa5pt8ds"]
 
 [ext_resource type="Texture2D" uid="uid://b0m7wgp8rcncw" path="res://assets/Zombie/skin_orc.png" id="1_b4pi1"]
 [ext_resource type="Script" path="res://assets/Zombie/zombie.gd" id="1_svnoo"]
@@ -416,6 +416,9 @@ size = Vector3(0.0917089, 0.143582, 0.0438965)
 script/source = "extends CollisionShape3D
 "
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_mm33x"]
+radius = 0.0716364
+
 [node name="Zombie" type="CharacterBody3D" groups=["enemy"]]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 script = ExtResource("1_svnoo")
@@ -584,4 +587,11 @@ path_desired_distance = 0.75
 wait_time = 0.1
 autostart = true
 
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0.00390062, 0.0669641, -0.0431998)
+shape = SubResource("SphereShape3D_mm33x")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

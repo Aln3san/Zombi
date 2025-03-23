@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bytdrbdswylym"]
+[gd_scene load_steps=8 format=3 uid="uid://bytdrbdswylym"]
 
 [ext_resource type="Script" path="res://assets/Player/player.gd" id="1_rh3u5"]
 [ext_resource type="PackedScene" uid="uid://deppocgkjmxjh" path="res://assets/Player/gun.tscn" id="2_d6jxs"]
@@ -13,7 +13,13 @@ font_size = 117
 outline_size = 10
 outline_color = Color(0, 0, 0, 1)
 
-[node name="Player" type="CharacterBody3D"]
+[sub_resource type="LabelSettings" id="LabelSettings_vm4ib"]
+font_size = 117
+font_color = Color(1, 0, 0, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_rh3u5")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -32,10 +38,20 @@ current = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.439, -0.364, -0.721)
 
 [node name="Label" type="Label" parent="head/Camera3D"]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 41.0
+offset_top = 3.0
+offset_right = 415.0
+offset_bottom = 164.0
 text = "40 / 40"
 label_settings = SubResource("LabelSettings_3bgvl")
+
+[node name="Label2" type="Label" parent="head/Camera3D"]
+offset_left = 47.0
+offset_top = 166.0
+offset_right = 421.0
+offset_bottom = 327.0
+text = "3 / 3"
+label_settings = SubResource("LabelSettings_vm4ib")
 
 [node name="TextureRect" type="TextureRect" parent="head/Camera3D"]
 offset_left = 960.0

@@ -64,10 +64,29 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 9.20918, 8.10901, -19.9998
 [node name="Zombie3" parent="." instance=ExtResource("3_1q23w")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 2.82238, 5.0329, -21.76)
 
+[node name="Zombie4" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 36.3587, 0.311317, -57.5152)
+
+[node name="Zombie5" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 7.57634, 0.434484, -63.2104)
+
+[node name="Zombie6" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -20.5631, 0.282887, -67.6948)
+
+[node name="Zombie7" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -60.5888, -3.67222, -67.7774)
+
+[node name="Zombie8" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 60.5901, 0.291146, -49.6942)
+
+[node name="Zombie9" parent="." instance=ExtResource("3_1q23w")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, -55.6682, 0.592887, -21.5022)
+
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_ak5e5")
 
 [node name="floor" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/floor"]
 material_override = SubResource("StandardMaterial3D_mi1e5")
@@ -104,4 +123,54 @@ material_override = SubResource("StandardMaterial3D_blinu")
 mesh = SubResource("BoxMesh_yrcp1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box3"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box4" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.9109, 1.23335, -9.81794)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box4"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box4"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box5" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.2018, 1.23335, 6.36578)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box5"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box5"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box6" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.2018, 1.23335, -5.34544)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box6"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box6"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box7" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -35.6408, 1.23335, -19.475)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box7"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box7"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box8" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -49.1565, 1.23335, 4.80792)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box8"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box8"]
 shape = SubResource("BoxShape3D_7pyf5")

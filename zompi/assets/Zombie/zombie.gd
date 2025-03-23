@@ -16,6 +16,8 @@ func _physics_process(delta: float) -> void:
 	$holder.look_at(player.position)
 	velocity = dir * speed
 	
+	$holder.rotation.x = 0
+	
 	move_and_slide()
 	
 	pass
@@ -26,4 +28,11 @@ func make_path():
 
 func _on_timer_timeout() -> void:
 	make_path()
+	pass 
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		body.damage()
+	
 	pass 

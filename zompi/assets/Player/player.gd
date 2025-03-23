@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 
 @export var SPEED = 7.0
-@export var JUMP_VELOCITY = 6.0
+@export var JUMP_VELOCITY = 7.0
 @export var gravity = -9.8
 @export var sensitivity = 0.004
 
@@ -13,6 +13,8 @@ extends CharacterBody3D
 @onready var gun_animation: AnimationPlayer = $head/Camera3D/gun/AnimationPlayer
 var bullets_left = 40
 var bullet = preload("res://assets/Player/builet.tscn")
+
+var health = 3
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -33,6 +35,8 @@ func _physics_process(delta: float) -> void:
 	
 	
 	$head/Camera3D/Label.text = str(bullets_left) + " / 40"
+	$head/Camera3D/Label2.text = str(health) + " / 3"
+	
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
@@ -45,8 +49,10 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("reload"):
 		gun_animation.play("reload")
 		bullets_left = 40
-
-
+	
+	if health == 0:
+		get_tree().reload_current_scene()
+	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("left", "right", "up", "down")
@@ -60,6 +66,10 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+
+func damage():
+	health -= 1
+	pass
 
 func shoot():
 
