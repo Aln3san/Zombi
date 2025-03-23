@@ -410,7 +410,7 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_71njk"]
-size = Vector3(0.0917089, 0.144585, 0.0438965)
+size = Vector3(0.0917089, 0.143582, 0.0438965)
 
 [sub_resource type="GDScript" id="GDScript_5h61q"]
 script/source = "extends CollisionShape3D
@@ -423,6 +423,7 @@ script = ExtResource("1_svnoo")
 [node name="holder" type="Node3D" parent="."]
 
 [node name="Skeleton3D" type="Skeleton3D" parent="holder"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
 bones/0/name = "Rig1"
 bones/0/parent = -1
 bones/0/rest = Transform3D(0, -0.999998, -0.00216072, 1, 0, 0, 0, -0.00216072, 0.999998, 0, 0.06, 0)
@@ -572,6 +573,15 @@ libraries = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0.00225533, 0.064147, -2.4422e-05)
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0.00225533, 0.0646487, -2.4422e-05)
 shape = SubResource("BoxShape3D_71njk")
 script = SubResource("GDScript_5h61q")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.75
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

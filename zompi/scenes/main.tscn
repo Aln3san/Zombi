@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ch2sel5qwek1g"]
+[gd_scene load_steps=14 format=3 uid="uid://ch2sel5qwek1g"]
 
 [ext_resource type="Texture2D" uid="uid://bjbx03lfewhlf" path="res://assets/Sprites/floor_texture.png" id="1_qmmm1"]
 [ext_resource type="PackedScene" uid="uid://bytdrbdswylym" path="res://assets/Player/player.tscn" id="2_8fcee"]
@@ -15,6 +15,12 @@ sky_material = SubResource("ProceduralSkyMaterial_4k3hd")
 background_mode = 2
 sky = SubResource("Sky_ucejh")
 tonemap_mode = 2
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_ak5e5"]
+vertices = PackedVector3Array(-1.25, 0.07, -6.75, 0, 0.07, -6.75, 0, 0.07, -24.25, -1.75, 0.07, -6.25, -24.25, 0.07, -24.25, -24.25, 0.07, -4.25, -1.75, 0.07, -4.25, 1.5, 0.07, -6.75, 2, 0.07, -6.25, 24.25, 0.07, -5, 24.25, 0.07, -24.25, 2, 0.07, -4.75, -0.25, 2.08, -5.25, -0.25, 2.08, -4.5, 0.25, 2.08, -4.5, 0.25, 2.08, -5.25, 2, 0.07, -3.75, 6.75, 0.07, 5.5, 9.25, 0.07, 5.5, 9.75, 0.07, 6, 9.75, 0.07, 7.25, 24.25, 0.07, 7.25, -3.75, 0.07, 4.25, -1.75, 0.07, -3.75, -6.25, 0.07, 4.25, -24.25, 0.07, 6, -6.75, 0.07, 6, -6.75, 0.07, 4.75, -1.25, 0.07, -3, -3, 0.07, 4.75, 1.5, 0.07, -3, -3, 0.07, 6.75, 6, 0.07, 6, 6, 0.07, 6.75, -5.25, 2.08, 5.75, -5.25, 2.08, 6.5, -4.5, 2.08, 6.5, -4.5, 2.08, 5.75, -5, 0.07, 24.25, -5, 0.07, 8, -6.25, 0.07, 8, -6.75, 0.07, 7.5, -24.25, 0.07, 24.25, 6, 0.07, 8.75, -3.5, 0.07, 8, 8, 0.07, 24.25, 8, 0.07, 9.25, 6.5, 0.07, 9.25, 7.5, 2.08, 7, 7.5, 2.08, 7.75, 8.25, 2.08, 7.75, 8.25, 2.08, 7, 9.75, 0.07, 8.75, 9.25, 0.07, 9.25, 24.25, 0.07, 24.25)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(0, 3, 2), PackedInt32Array(2, 3, 4), PackedInt32Array(4, 3, 5), PackedInt32Array(3, 6, 5), PackedInt32Array(7, 1, 2), PackedInt32Array(7, 2, 8), PackedInt32Array(8, 2, 10), PackedInt32Array(8, 10, 9), PackedInt32Array(9, 11, 8), PackedInt32Array(15, 14, 12), PackedInt32Array(12, 14, 13), PackedInt32Array(16, 11, 17), PackedInt32Array(17, 11, 18), PackedInt32Array(21, 20, 19), PackedInt32Array(18, 11, 19), PackedInt32Array(19, 11, 21), PackedInt32Array(21, 11, 9), PackedInt32Array(23, 22, 6), PackedInt32Array(6, 22, 24), PackedInt32Array(27, 26, 25), PackedInt32Array(24, 27, 6), PackedInt32Array(6, 27, 5), PackedInt32Array(5, 27, 25), PackedInt32Array(22, 23, 28), PackedInt32Array(22, 28, 29), PackedInt32Array(29, 28, 30), PackedInt32Array(30, 16, 29), PackedInt32Array(29, 16, 31), PackedInt32Array(31, 16, 32), PackedInt32Array(32, 16, 17), PackedInt32Array(32, 33, 31), PackedInt32Array(37, 36, 34), PackedInt32Array(34, 36, 35), PackedInt32Array(40, 39, 38), PackedInt32Array(40, 38, 41), PackedInt32Array(41, 38, 42), PackedInt32Array(41, 42, 25), PackedInt32Array(25, 26, 41), PackedInt32Array(31, 33, 44), PackedInt32Array(44, 33, 43), PackedInt32Array(47, 46, 45), PackedInt32Array(43, 47, 44), PackedInt32Array(44, 47, 39), PackedInt32Array(39, 47, 38), PackedInt32Array(38, 47, 45), PackedInt32Array(51, 50, 48), PackedInt32Array(48, 50, 49), PackedInt32Array(52, 20, 21), PackedInt32Array(45, 46, 53), PackedInt32Array(52, 21, 53), PackedInt32Array(53, 21, 54), PackedInt32Array(53, 54, 45)]
+cell_height = 0.01
+agent_radius = 0.75
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mi1e5"]
 albedo_color = Color(0.0431373, 0.305882, 0, 1)
@@ -45,46 +51,8 @@ environment = SubResource("Environment_cuwiu")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
-[node name="floor" type="StaticBody3D" parent="."]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="floor"]
-material_override = SubResource("StandardMaterial3D_mi1e5")
-mesh = SubResource("BoxMesh_4ip4c")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="floor"]
-shape = SubResource("BoxShape3D_r8guy")
-
-[node name="box" type="StaticBody3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.06114, -4.75651)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="box"]
-material_override = SubResource("StandardMaterial3D_blinu")
-mesh = SubResource("BoxMesh_yrcp1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="box"]
-shape = SubResource("BoxShape3D_7pyf5")
-
-[node name="box2" type="StaticBody3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.78354, 1.06114, 6.1613)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="box2"]
-material_override = SubResource("StandardMaterial3D_blinu")
-mesh = SubResource("BoxMesh_yrcp1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="box2"]
-shape = SubResource("BoxShape3D_7pyf5")
-
-[node name="box3" type="StaticBody3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.75484, 1.06114, 7.41564)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="box3"]
-material_override = SubResource("StandardMaterial3D_blinu")
-mesh = SubResource("BoxMesh_yrcp1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="box3"]
-shape = SubResource("BoxShape3D_7pyf5")
-
 [node name="Player" parent="." instance=ExtResource("2_8fcee")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.44887, 0)
 
 [node name="Zombie" parent="." instance=ExtResource("3_1q23w")]
@@ -95,3 +63,45 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 9.20918, 8.10901, -19.9998
 
 [node name="Zombie3" parent="." instance=ExtResource("3_1q23w")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 2.82238, 5.0329, -21.76)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_ak5e5")
+
+[node name="floor" type="StaticBody3D" parent="NavigationRegion3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/floor"]
+material_override = SubResource("StandardMaterial3D_mi1e5")
+mesh = SubResource("BoxMesh_4ip4c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/floor"]
+shape = SubResource("BoxShape3D_r8guy")
+
+[node name="box" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.06114, -4.75651)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box2" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.78354, 1.06114, 6.1613)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box2"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box2"]
+shape = SubResource("BoxShape3D_7pyf5")
+
+[node name="box3" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.75484, 1.06114, 7.41564)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/box3"]
+material_override = SubResource("StandardMaterial3D_blinu")
+mesh = SubResource("BoxMesh_yrcp1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/box3"]
+shape = SubResource("BoxShape3D_7pyf5")
