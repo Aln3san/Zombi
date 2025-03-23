@@ -9,8 +9,8 @@ extends CharacterBody3D
 @onready var head: Node3D = $head
 @onready var camera_3d: Camera3D = $head/Camera3D
 
-@onready var gun_raycast: RayCast3D = $RayCast3D
-@onready var gun_animation: AnimationPlayer = $AnimationPlayer
+@onready var gun_raycast: RayCast3D = $head/Camera3D/gun/RayCast3D
+@onready var gun_animation: AnimationPlayer = $head/Camera3D/gun/AnimationPlayer
 var bullets_left = 40
 var bullet = preload("res://assets/Player/builet.tscn")
 
@@ -30,7 +30,9 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
-
+	
+	
+	$head/Camera3D/Label.text = str(bullets_left) + " / 40"
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
@@ -39,6 +41,10 @@ func _physics_process(delta: float) -> void:
 		if !gun_animation.is_playing():
 			gun_animation.play("shoot")
 			shoot()
+	
+	if Input.is_action_just_pressed("reload"):
+		gun_animation.play("reload")
+		bullets_left = 40
 
 
 	# Get the input direction and handle the movement/deceleration.

@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgollpll5gtpy"]
+[gd_scene load_steps=5 format=3 uid="uid://dgollpll5gtpy"]
+
+[ext_resource type="Script" path="res://assets/Player/bullet.gd" id="1_gj3xt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_383s1"]
 albedo_color = Color(1, 1, 0.219608, 1)
@@ -8,13 +10,14 @@ radius = 0.2
 height = 1.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ak5ih"]
-radius = 0.345333
-height = 1.11823
+radius = 0.157572
+height = 0.519502
 
 [node name="builet" type="Area3D"]
+script = ExtResource("1_gj3xt")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.828594, -0.00635783, 0.559814, 0.559848, -0.0122455, 0.828505, 0.00158778, 0.999905, 0.0137059, 0, 0, 0)
+transform = Transform3D(-0.447824, -0.00291566, 0.295296, 0.302577, -0.0056157, 0.437028, 0.000858138, 0.45855, 0.00722969, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_383s1")
 mesh = SubResource("CapsuleMesh_iap77")
 

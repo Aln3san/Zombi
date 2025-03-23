@@ -1,11 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://bytdrbdswylym"]
+[gd_scene load_steps=7 format=3 uid="uid://bytdrbdswylym"]
 
 [ext_resource type="Script" path="res://assets/Player/player.gd" id="1_rh3u5"]
 [ext_resource type="PackedScene" uid="uid://deppocgkjmxjh" path="res://assets/Player/gun.tscn" id="2_d6jxs"]
+[ext_resource type="Texture2D" uid="uid://vesxuclmp6vd" path="res://assets/Sprites/crosshair.png" id="3_jam27"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_h0r48"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_40x6k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3bgvl"]
+font_size = 117
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_rh3u5")
@@ -24,3 +30,16 @@ current = true
 
 [node name="gun" parent="head/Camera3D" instance=ExtResource("2_d6jxs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.439, -0.364, -0.721)
+
+[node name="Label" type="Label" parent="head/Camera3D"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "40 / 40"
+label_settings = SubResource("LabelSettings_3bgvl")
+
+[node name="TextureRect" type="TextureRect" parent="head/Camera3D"]
+offset_left = 960.0
+offset_top = 540.0
+offset_right = 1024.0
+offset_bottom = 604.0
+texture = ExtResource("3_jam27")
