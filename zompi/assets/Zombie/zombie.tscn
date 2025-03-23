@@ -416,7 +416,7 @@ size = Vector3(0.0917089, 0.143582, 0.0438965)
 script/source = "extends CollisionShape3D
 "
 
-[node name="Zombie" type="CharacterBody3D"]
+[node name="Zombie" type="CharacterBody3D" groups=["enemy"]]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 script = ExtResource("1_svnoo")
 

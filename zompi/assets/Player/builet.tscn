@@ -24,3 +24,10 @@ mesh = SubResource("CapsuleMesh_iap77")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(-0.019875, 0.0411593, 0.998955, -0.999802, 0.000360156, -0.0199067, -0.00117913, -0.999153, 0.0411439, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_ak5ih")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
