@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgollpll5gtpy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_383s1"]
+albedo_color = Color(1, 1, 0.219608, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_iap77"]
+radius = 0.2
+height = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ak5ih"]
+radius = 0.345333
+height = 1.11823
+
+[node name="builet" type="Area3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.828594, -0.00635783, 0.559814, 0.559848, -0.0122455, 0.828505, 0.00158778, 0.999905, 0.0137059, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_383s1")
+mesh = SubResource("CapsuleMesh_iap77")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-0.019875, 0.0411593, 0.998955, -0.999802, 0.000360156, -0.0199067, -0.00117913, -0.999153, 0.0411439, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_ak5ih")
